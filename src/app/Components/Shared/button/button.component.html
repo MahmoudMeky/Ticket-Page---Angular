@@ -1,6 +1,9 @@
 <button
-  class="button d-flex align-items-center gap-2 justify-content-center border-light btn border-1"
+  class="button d-flex align-items-center gap-2 justify-content-center align-items-center border-light btn border-1"
   [class]="buttonColor == 'main' ? 'bg-primary' : 'bg-light'"
+  [ngClass]="{
+    'outline-btn bg-transparent text-white': buttonOutline
+  }"
 >
   <ng-content></ng-content>
 </button>

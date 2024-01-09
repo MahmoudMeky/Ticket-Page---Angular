@@ -1,0 +1,51 @@
+@import "../../styles/Variables.scss";
+
+.coupon {
+  min-height: 264px;
+  background-image: url("/assets/images/wavy-pattern.png");
+  background-size: cover; /* Controls how the background image is sized */
+  overflow: hidden;
+  .coupon-top {
+    height: 63.5%;
+    .link-copy {
+      direction: ltr;
+      padding: 12px 16px;
+      cursor: pointer;
+      &:hover {
+        .link-text {
+          color: $main-color;
+        }
+      }
+      .link-text {
+        color: $main-text-color;
+        transition: 0.2s all;
+      }
+    }
+  }
+  .coupon-btm {
+    flex-grow: 1;
+    border-top: 2px dashed rgba(255, 255, 255, 0.38);
+  }
+}
+
+.circles-and-line-container {
+  top: 58%;
+  left: 50%;
+  transform: translateX(-50%);
+  //   background-color: red;
+  width: 100%;
+  .circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: $background-gray;
+    border-radius: 50%;
+    top: 3px;
+    &.left {
+      left: -15px;
+    }
+    &.right {
+      right: -15px;
+    }
+  }
+}

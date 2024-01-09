@@ -7,5 +7,7 @@ import { Component, Input } from "@angular/core";
 })
 export class ButtonComponent {
   @Input("color") buttonColor: string = "";
+  @Input("outline") buttonOutline: boolean = false;
+  @Input("inline") inlineButton: boolean = false;
   constructor() {}
 }
