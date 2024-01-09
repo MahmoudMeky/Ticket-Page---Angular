@@ -1,0 +1,14 @@
+@import "../../styles/Variables.scss";
+
+.backBtn {
+  background: #e7eaed;
+  width: 32px;
+  height: 32px;
+  transition: 0.3s background;
+  &:hover {
+    background-color: #b2b7bc;
+  }
+}
+.main-text {
+  color: $main-text-color;
+}

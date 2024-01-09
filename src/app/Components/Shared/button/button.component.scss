@@ -1,0 +1,9 @@
+@import "../../../styles/Variables.scss";
+
+.button {
+  border-color: $gray-color-light !important;
+  transition: all 0.3s;
+  &:hover {
+    background-color: #ececec !important;
+  }
+}

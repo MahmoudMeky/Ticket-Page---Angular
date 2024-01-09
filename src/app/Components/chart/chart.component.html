@@ -1,0 +1,59 @@
+<div class="h-100 bg-white rounded-2 p-2 d-flex flex-column gap-4 border">
+  <div class="px-4 mt-3 row">
+    <div class="col-12 col-md-8 col-lg-10">
+      <h6 class="mb-2">إحصائيات استخدام القسيمة</h6>
+      <div class="d-flex align-items-center">
+        <span class="text-gray fw-medium"
+          >05 يوليو , 2023 - 05 أغسطس , 2023</span
+        >
+        <div class="mx-2">
+          <svg
+            width="8"
+            height="8"
+            viewBox="0 0 8 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.21882 0.651932L4.10941 3.67981L1 0.651932"
+              stroke="#92A1AD"
+              stroke-width="1.20977"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 col-lg-2 d-flex sm:justify-content-center  md:justify-content-end">
+      <app-button>
+        سنوياً
+        <svg
+          width="15"
+          height="15"
+          viewBox="0 0 15 11"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2.05794 4.20835L4.56457 6.87616C4.8606 7.19122 5.34501 7.19122 5.64103 6.87616L8.14766 4.20835"
+            stroke="#898989"
+            stroke-width="1"
+            stroke-miterlimit="15"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </app-button>
+    </div>
+  </div>
+  <p-chart
+    class="flex-grow-1"
+    type="line"
+    [data]="data"
+    [options]="chartOptions"
+    height="200"
+    width="100%"
+  >
+  </p-chart>
+</div>

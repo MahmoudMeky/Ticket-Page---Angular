@@ -6,7 +6,7 @@ import { FormsModule } from "@angular/forms";
 // import { InputTextModule } from 'primeng/inputtext';
 // import { InputTextareaModule } from 'primeng/inputtextarea';
 // import { InputNumberModule } from 'primeng/inputnumber';
-// import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from "primeng/button";
 // import { TableModule } from 'primeng/table';
 // import { DialogModule } from 'primeng/dialog';
 // import { ConfirmDialogModule } from 'primeng/confirmdialog';
@@ -15,11 +15,24 @@ import { FormsModule } from "@angular/forms";
 // import { RatingModule } from 'primeng/rating';
 // import { ToolbarModule } from 'primeng/toolbar';
 // import { ConfirmationService } from 'primeng/api';
+import { ChartModule } from "primeng/chart";
 
 import { AppComponent } from "./app.component";
+import { TicketTitleComponent } from "./Components/ticket-title/ticket-title.component";
+import { ChartComponent } from "./Components/chart/chart.component";
+import { QrCodeComponent } from "./Components/qr-code/qr-code.component";
+import { SalesComponent } from "./Components/sales/sales.component";
+import { ButtonComponent } from './Components/Shared/button/button.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    TicketTitleComponent,
+    ChartComponent,
+    QrCodeComponent,
+    SalesComponent,
+    ButtonComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -35,7 +48,8 @@ import { AppComponent } from "./app.component";
     // InputTextareaModule,
     // RadioButtonModule,
     // DropdownModule,
-    // ButtonModule
+    ButtonModule,
+    ChartModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
