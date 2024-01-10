@@ -1,9 +1,9 @@
 import { Component, ElementRef, ViewChild } from "@angular/core";
 
 @Component({
-  selector: "app-qr-code",
-  templateUrl: "./qr-code.component.html",
-  styleUrls: ["./qr-code.component.scss"],
+  selector: "app-coupon",
+  templateUrl: "./coupon.component.html",
+  styleUrls: ["./coupon.component.scss"],
 })
 export class QrCodeComponent {
   @ViewChild("link") linkElement: ElementRef;

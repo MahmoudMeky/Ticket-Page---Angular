@@ -1,11 +1,13 @@
 @import "../../styles/Variables.scss";
 
 .coupon {
-  min-height: 264px;
+  min-height: 280px;
   background-image: url("/assets/images/wavy-pattern.png");
   background-size: cover; /* Controls how the background image is sized */
   overflow: hidden;
   .coupon-top {
+    // flex-grow: 1;
+
     height: 63.5%;
     .link-copy {
       direction: ltr;
@@ -21,10 +23,26 @@
         transition: 0.2s all;
       }
     }
+    .remove-btn {
+      position: absolute;
+      left: 35px;
+      top: 35px;
+      border: none;
+    }
   }
   .coupon-btm {
     flex-grow: 1;
     border-top: 2px dashed rgba(255, 255, 255, 0.38);
+    // background-color: red;
+    .qr-code {
+      width: 82px;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      transition: 0.25s all;
+      &:hover {
+        border-color: white;
+      }
+    }
   }
 }
 

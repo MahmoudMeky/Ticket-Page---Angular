@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QrCodeComponent } from './qr-code.component';
+import { QrCodeComponent } from './coupon.component';
 
 describe('QrCodeComponent', () => {
   let component: QrCodeComponent;
