@@ -14,6 +14,7 @@ import { QrCodeComponent } from "./Components/coupon/coupon.component";
 import { SalesComponent } from "./Components/sales/sales.component";
 import { ButtonComponent } from "./Components/Shared/button/button.component";
 import { TooltipModule } from "primeng/tooltip";
+import { TableComponent } from './Components/table/table.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { TooltipModule } from "primeng/tooltip";
     QrCodeComponent,
     SalesComponent,
     ButtonComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,
