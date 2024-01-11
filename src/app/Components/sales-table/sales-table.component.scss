@@ -1,0 +1,41 @@
+@import "../../styles/Variables.scss";
+.custom-text-start {
+  text-align: start;
+}
+th {
+  color: $secondary-text-color !important   ;
+  text-align: center !important;
+}
+
+td {
+  text-align: center !important;
+}
+
+.paginator {
+  direction: ltr;
+}
+
+.p-paginator-rpp-options {
+  // background-color: red!important;
+  // margin-left: auto;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.ticket-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: $main-color-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file-size {
+  font-size: 0.8rem;
+}
